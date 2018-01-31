@@ -6,54 +6,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="https://d17u0960v8a9bp.cloudfront.net/favicon.ico"> 
-	<style>
-		.content{
-			padding: 0px 150px;
-			background: #F0F8FF;
-		}
-		#main{
-			background: white;
-		}
-
-	</style>
+	
 </head>
 <body>
-	<div class="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <a class="navbar-brand" href="bai1.html"><img src="https://d17u0960v8a9bp.cloudfront.net/192x192.png" width="30" height="30" class="d-inline-block align-top" alt="">Tinycards</a>
+	<div class="header" style="position: fixed;z-index: 30; width: 100%;" >
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0% 15%;">
+		  <a class="navbar-brand" href="bai1.html"><img src="https://d17u0960v8a9bp.cloudfront.net/192x192.png" width="30" height="30" class="d-inline-block align-top" alt="icon">Tinycards</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="bai1.html">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Create</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Account</a>
-		      </li>
+				<li>
+					<form class="form-inline my-2 my-lg-0">
+			      		<input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search" >
+			      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    	</form>
+				</li>
+		      	<li class="nav-item active">
+		        	<a class="nav-link" href="bai1.html" >Home <span class="sr-only">(current)</span></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#">Create</a>
+		     	</li>
+		      	<li class="nav-item">
+		      	  	<a class="nav-link" href="#" >Account</a>
+		     	 </li>
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
 		  </div>
 		</nav>		
 	</div>
-	<div class="content">
-		<div id="main">
-			<div id="favorites" style="padding: 50px">
-				<h3>Your favorites</h3>
+	<div class="content" style="padding: 0% 15%;background:	#7FFFD4;z-index: 10;">
+		<div id="main" style="background: white;padding-top: 3em;">
+			
+				
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				    	<a href="#">
+				      		<img class="d-block w-100" src="https://znews-photo-td.zadn.vn/w660/Uploaded/gtnvzv/2017_09_24/anh_1.jpg" alt="Second slide" height="350">
+				      		<h5 style="background:	#C5FFEC;text-align: right;">Tiếng Anh về các loại hoa quả</h5>
+				      	</a>
+				      	
+				    </div>
+				    <div class="carousel-item">
+				      	<a href="#">
+				      		<img class="d-block w-100" alt="First slide"  src="https://hoctienghan.com/uploads/22.JPG"  height="350">
+				      		<h5 style="background:	#C5FFEC;text-align: right;">Tiếng Anh về các bộ phận cơ thể</h5>
+				      	</a>
+				    </div>
+				    <div class="carousel-item">
+				      	<a href="#">
+				      		<img class="d-block w-100" src="https://xoithit.files.wordpress.com/2016/08/sport.jpg?w=595&h=377" alt="Third slide" height="350">
+				      		<h5 style="background:	#C5FFEC;text-align: right;">Tiếng Anh về các môn thể thao</h5>
+				      	</a>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			<div id="favorites" style="padding: 50px">	
+				<div class="row justify-content-between">
+				    <div class="col-4">
+				     	<h3>Your favorites</h3>
+				    </div>
+				    <div class="col-4">
+				      	<a href="#"><h5>SEE ALL</h5></a>
+				    </div>
+				</div>							
+				
 				<div class="row">
 					<div class="row-2" style="padding: 10px">
 						<div class="card" style="width: 10rem;height: 16rem;" >
-						  <img class="card-img-top" src="http://static.lananhedu.com/5093/news/2017/09/04/parts-of-the-body-girl-1504500415.jpg" alt="Card image cap">
+						  <img class="card-img-top" src="http://static.lananhedu.com/5093/news/2017/09/04/parts-of-the-body-girl-1504500415.jpg" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về bộ phận cơ thể</p>
+						    <p class="card-text">Bộ phận cơ thể</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -61,9 +100,9 @@
 					</div>
 		  			<div class="row-2" style="padding: 10px">
 		  				<div class="card" style="width: 10rem;height: 16rem;">
-						  <img class="card-img-top" src="https://znews-photo-td.zadn.vn/w660/Uploaded/gtnvzv/2017_09_24/anh_1.jpg" alt="Card image cap">
+						  <img class="card-img-top" src="https://znews-photo-td.zadn.vn/w660/Uploaded/gtnvzv/2017_09_24/anh_1.jpg" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về các loại quả</p>
+						    <p class="card-text">Các loại quả</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -73,11 +112,19 @@
 			</div>
 
 			<div id="follow" style="padding: 50px">
-				<h3>People you follow</h3>
+				<div class="row justify-content-between">
+				    <div class="col-4">
+				     	<h3>People you follow</h3>
+				    </div>
+				    <div class="col-4">
+				      	<a href="#"><h5>SEE ALL</h5></a>
+				    </div>
+				</div>		
+				
 				<div class="row">
 					<div class="row-2" style="padding: 10px">
 						<div class="card" style="width: 10rem;height: 16rem;">
-					  		<img class="card-img-top" src="https://orig00.deviantart.net/a609/f/2013/322/b/f/anonymous_logo_with_slogan_svg_animation_by_anondesign-d6rav5k.png" alt="Card image cap">
+					  		<img class="card-img-top" src="https://orig00.deviantart.net/a609/f/2013/322/b/f/anonymous_logo_with_slogan_svg_animation_by_anondesign-d6rav5k.png" alt="Card image cap" height="150">
 					  		<div class="card-body">
 							    <p class="card-text">anonymous</p>
 							    <a href="#" class="btn btn-primary">Go</a>
@@ -87,19 +134,19 @@
 					</div>
 		  			<div class="row-2" style="padding: 10px">
 						<div class="card" style="width: 10rem;height: 16rem;">
-					  		<img class="card-img-top" src="http://lh4.googleusercontent.com/-0yUMg-UzcQA/VHvNOcQXgbI/AAAAAAAAQlo/fALw0-y1z-U/s1600/Avatar-Facebook-an-danh-trang-1.jpg" >
-					  		<div class="card-body">
+					  		<img class="card-img-top" src="http://lh4.googleusercontent.com/-0yUMg-UzcQA/VHvNOcQXgbI/AAAAAAAAQlo/fALw0-y1z-U/s1600/Avatar-Facebook-an-danh-trang-1.jpg" alt="the man image" height="150" >
+					  		<div class="card-body" style="position: relative;">
 							    <p class="card-text">the man</p>
-							    <a href="#" class="btn btn-primary">Go</a>
+							    <a href="#" class="btn btn-primary" style="position: absolute;">Go</a>
 						  	</div>
 						  
 						</div>	
 					</div>
 					<div class="row-2" style="padding: 10px">
 						<div class="card" style="width: 10rem;height: 16rem;">
-					  		<img class="card-img-top" src="https://zmp3-photo-fbcrawler.zadn.vn/thumb/600_600/covers/8/3/832a312b97e616e8ca010f316b262f12_1335977150.jpg" alt="Card image cap" >
+					  		<img class="card-img-top" src="http://static.hdonline.vn/i/resources/new/post/screen/2017/05/10/7a82ef234711f7b599de364e47cc08b2_60e466b3-5f22-4316-a630-507399e19290jpg.jpg" alt="Card image cap" height="150">
 					  		<div class="card-body">
-							    <p class="card-text">Duong Mich</p>
+							    <p class="card-text">the girl</p>
 							    <a href="#" class="btn btn-primary">Go</a>
 						  	</div>
 						  
@@ -108,13 +155,21 @@
 				</div>
 			</div>
 			<div id="trending" style="padding: 50px">
-				<h3>Trending</h3>
+				<div class="row justify-content-between">
+				    <div class="col-4">
+				     	<h3>Trending</h3>
+				    </div>
+				    <div class="col-4">
+				      	<a href="#"><h5>SEE ALL</h5></a>
+				    </div>
+				</div>		
+				
 				<div class="row">
 					<div class="row-2" style="padding: 10px">
 						<div class="card" style="width: 10rem;height: 16rem;" >
-						  <img class="card-img-top" src="http://static.lananhedu.com/5093/news/2017/09/04/parts-of-the-body-girl-1504500415.jpg" alt="Card image cap">
+						  <img class="card-img-top" src="http://static.lananhedu.com/5093/news/2017/09/04/parts-of-the-body-girl-1504500415.jpg" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về bộ phận cơ thể</p>
+						    <p class="card-text">Bộ phận cơ thể</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -122,9 +177,9 @@
 					</div>
 		  			<div class="row-2" style="padding: 10px">
 		  				<div class="card" style="width: 10rem;height: 16rem;">
-						  <img class="card-img-top" src="https://znews-photo-td.zadn.vn/w660/Uploaded/gtnvzv/2017_09_24/anh_1.jpg" alt="Card image cap">
+						  <img class="card-img-top" src="https://znews-photo-td.zadn.vn/w660/Uploaded/gtnvzv/2017_09_24/anh_1.jpg" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về các loại quả</p>
+						    <p class="card-text">Các loại quả</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -132,9 +187,9 @@
 		  			</div>
 		  			<div class="row-2" style="padding: 10px">
 		  				<div class="card" style="width: 10rem;height: 16rem;">
-						  <img class="card-img-top" src="https://xoithit.files.wordpress.com/2016/08/sport.jpg?w=595&h=377" alt="Card image cap">
+						  <img class="card-img-top" src="https://xoithit.files.wordpress.com/2016/08/sport.jpg?w=595&h=377" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về các môn thể thao</p>
+						    <p class="card-text">Môn thể thao</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -142,9 +197,9 @@
 		  			</div>
 		  			<div class="row-2" style="padding: 10px">
 		  				<div class="card" style="width: 10rem;height: 16rem;">
-						  <img class="card-img-top" src="http://videothieunhi.com/wp-content/uploads/2016/06/be-hoc-ten-cac-con-vat-bagn-tien.jpg" alt="Card image cap">
+						  <img class="card-img-top" src="http://videothieunhi.com/wp-content/uploads/2016/06/be-hoc-ten-cac-con-vat-bagn-tien.jpg" alt="Card image cap" height="150">
 						  <div class="card-body">
-						    <p class="card-text">Tiếng Anh về các con vật</p>
+						    <p class="card-text">Các con vật</p>
 						    <a href="#" class="btn btn-primary">Go</a>
 						  </div>
 
@@ -154,34 +209,34 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer">
-		<div class="row justify-content-md-center">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			  <a class="navbar-brand" href="#">About</a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="https://support.duolingo.com/hc/en-us">Support <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#">Term</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="https://www.duolingo.com/">Duligo</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link disabled" href="https://www.facebook.com/tinycards">Facebook</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link disabled" href="https://twitter.com/tinycardsapp">twitter</a>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>	
-		</div>	
+	<div id="footer" style="padding: 0% 15%;background:#7FFFD4; ">
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#" >About</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="https://support.duolingo.com/hc/en-us">Support <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Term</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://www.duolingo.com/">Duligo</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://www.facebook.com/tinycards">Facebook</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://twitter.com/tinycardsapp">Twitter</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>	
+		
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

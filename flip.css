@@ -1,0 +1,100 @@
+/* entire container, keeps perspective */
+
+
+/* flip the pane when activeed */
+/*.flip-container:active .flipper, .flip-container.active .flipper, #flip-toggle.flip .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}*/
+			
+/* START: Accommodating for IE */
+.flip-container:active .back, .flip-container.active .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:active .front, .flip-container.active .front {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+/* END: Accommodating for IE */
+
+
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.5s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 0.5s;
+
+	-moz-transition: 0.5s;
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.5s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 0.5s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg);
+
+	-moz-transition: 0.5s;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: rotateY(0deg);
+
+	-o-transition: 0.5s;
+	-o-transform-style: preserve-3d;
+	-o-transform: rotateY(0deg);
+
+	-ms-transition: 0.5s;
+	-ms-transform-style: preserve-3d;
+	-ms-transform: rotateY(0deg);
+
+	transition: 0.5s;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+
+	position: absolute;
+	
+}
+
+/* front pane, placed above back */
+.front {
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	
+
+	
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+	
+}
+
